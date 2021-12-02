@@ -29,11 +29,13 @@ To start using this app, download the git repository or the zip file. Open termi
 3. Two simple steps to create test Tickets
 - Copy the JSON here, and save it to a file called tickets.json on your computer.
 - Use the cURL command below to POST the in this file to your new Zendesk account. You'll need to replace the , {email}, and{password} placeholders with the relevant details for your own Zendesk account. If you're not familiar with cURL, feel free to use whatever means you like to make the request. Postman is an easy option.
-
+```
 curl https://{subdomain}.zendesk.com/api/v2/imports/tickets/create_many.json -v -u {email_address}:{password} -X POST -d @tickets.json -H "Content-Type: application/json"
+```
 
+```
 4. Run python appController.py
-
+```
 You should see the following screen:
 ```
 -------------------------WELCOME TO ZENDESK TICKET VIEWER-------------------------
@@ -55,8 +57,9 @@ Use 'u' and 'd' (up and down) to page through tickets when viewing all tickets.
 ## Application Testing:
 For testing this app, go to the **"tests"** folder within the app on command line/terminal by using **cd** commands. Then type:<br /><br />
 
+```
 6. Run python testTicketViewer.py -b
-
+```
 **NOTE:** **"-b"** is used for supressing output/print statements during unit testing.<br /><br />
 You should see a message similar to the following on your CLI Screen:
 ```
