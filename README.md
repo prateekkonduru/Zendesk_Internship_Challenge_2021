@@ -33,7 +33,7 @@ To start using this app, download the git repository or the zip file. Open termi
 curl https://{subdomain}.zendesk.com/api/v2/imports/tickets/create_many.json -v -u {email_address}:{password} -X POST -d @tickets.json -H "Content-Type: application/json"
 
 4. Run python appController.py
-```
+
 You should see the following screen:
 ```
 -------------------------WELCOME TO ZENDESK TICKET VIEWER-------------------------
